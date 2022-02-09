@@ -5,7 +5,7 @@ public class LogMessage
     /** Precondition: message is a valid log message. */
     public LogMessage(String message)
     {
-        machineId = message.substring(0, message.indexOf(":") + 1);
+        machineId = message.substring(0, message.indexOf(":"));
         description = message.substring(message.indexOf(":") + 1);
     }
     /** Returns true if the description in this log message properly contains keyword;
